@@ -129,15 +129,19 @@ get ObjectQueue version.
 - Note: in progress
 ### .mlength(a, b, [manhattan] ) ####
 - Note: in progress
+
 ### .sort_algorithm( _type ) ####
+- set sorting algorithm.
 - auto: auto select
 - bubble: bubble sort
 - quick: quick sort
-- Note: in progress
+
 ### .sort( _sort_key, [comparative] ) ####
-- Note: in progress
+- sort queue element using '_sort_key'.
+
 ### .transpose_next( _qe ) ####
 - Note: in progress
+
 ### .swap( _qe1, _qe2 ) ####
-- Note: in progress
+- swap enqueued queue elements specified by _qe1 and _qe2.
 
