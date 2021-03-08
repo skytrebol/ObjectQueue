@@ -128,7 +128,7 @@ get ObjectQueue version.
 ### .position_range_search_count(qe, manhmin, manhmax, [mask], [manhattan] ) ####
 - Note: in progress
 ### .mlength(a, b, [manhattan] ) ####
-- Note: in progress
+- get manhattan length between qe_a and qe_b which has x and y parameter.
 
 ### .sort_algorithm( _type ) ####
 - set sorting algorithm.
