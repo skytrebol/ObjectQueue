@@ -9,9 +9,8 @@ ObjectQueue is a multi-function queue; by using this queue, javascript objects c
 - Note: _qoption may be modified.
 
 -_qoption:
---ObjectQueue._QOPT_DEQ_CLEAN(default): hidden object which created by ObjectQueue is removed when object is dequeue.
---ObjectQueue._QOPT_NONE: no queue option.
--Note: _QOPT_NONE has been added.
+_qoption.deq_clean: if set 1, the hidden object which automatically created in the queue element during the enqueuing process is removed when the queue element is dequeued (default 1).
+-Note: _QOPT_NONE option has been removed.
 
 
 ### .get_version() ####
