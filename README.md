@@ -5,8 +5,6 @@ ObjectQueue is a multi-function queue; by using this queue, javascript objects c
 
 ### ObjectQueue( [_qoption] ) ###
 -constructor: create an ObjectQueue.
---you can use null as _qoption ObjectQueue._QOPT_DEQ_CLEAN. 
-- Note: _qoption may be modified.
 
 -_qoption:
 _qoption.deq_clean: if set 1, the hidden object which automatically created in the queue element during the enqueuing process is removed when the queue element is dequeued (default 1).
@@ -39,11 +37,11 @@ get ObjectQueue version.
 
 ### .mask( qe ) ####
 -the qe(queue element) state is changed to Masked.
--Note: API name has been changed.
+-Note: .setmaskmc() has been renamed .mask()
 
 ### .unmask( qe ) ####
 -the qe(queue element) state is changed to UnMasked.
--Note: API name has been changed.
+-Note: .resetmaskmc() has been renamed .unmask()
 
 
 ### .setmask( key, val ) ####
@@ -103,7 +101,7 @@ get ObjectQueue version.
 ### .count(key,val,[mask]) ####
 - get a total number of queue element(s) which satisfied qe["key"]==val.
 
-### .search(key,val,[mask], [start_qe]) ####
+### .search(key, val, [mask], [start_qe]) ####
 - get a queue element(s) which satisfied qe["key"]==val.
 - you can omit start_qe and search qe from queue head.
 - Note: this API,mask and start_qe, may be modified.
@@ -139,7 +137,7 @@ get ObjectQueue version.
 - sort queue element using '_sort_key'.
 
 ### .transpose_next( _qe ) ####
-- Note: in progress
+- swap enqueued queue elements, _qe and next to _qe.
 
 ### .swap( _qe1, _qe2 ) ####
 - swap enqueued queue elements specified by _qe1 and _qe2.
